@@ -3,7 +3,7 @@ import shutil
 import random
 
 # 訓練資料的路徑
-path = "C:\\Users\\user\\Desktop\\data\\fruit\\train\\raw"
+path = "C:\\Users\\user\\Desktop\\data\\blood_cell\\train\\raw"
 
 # 遍歷每個類別資料夾
 for folder in os.listdir(path):
@@ -18,7 +18,7 @@ for folder in os.listdir(path):
     mfilelist = random.sample(filelist, k=num)
 
     # 目標測試資料夾路徑
-    test_folder = "C:\\Users\\user\\Desktop\\data\\fruit\\test\\raw" + "\\" + folder
+    test_folder = "C:\\Users\\user\\Desktop\\data\\blood_cell\\test\\raw" + "\\" + folder
 
     # 如果目標資料夾不存在，則創建
     if not os.path.exists(test_folder):
